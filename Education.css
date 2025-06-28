@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: #01161e;
+  height: 70px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  font-size: 1.7rem;
+}
+.menu {
+  width: 900px;
+  margin-right: 20px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.box {
+  height: 90vh;
+  /* background-color: #406675; */
+  background-color: #AEC3B0;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.mps {
+  height: 400px;
+  width: 400px;
+  background: linear-gradient(45deg, #eff6e0, #aec3b0);
+  border-radius: 20px;
+  border: 4px ridge black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  cursor: pointer;
+  visibility:visible;
+}
+.jecrc {
+  height: 400px;
+  width: 400px;
+  background: linear-gradient(45deg, #eff6e0, #aec3b0);
+  border-radius: 20px;
+  border: 4px ridge black;
+}
+img {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+.edu {
+  font-family: "Truculenta", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+.mps:hover {
+  box-shadow: inset 0px 0px 20px rgb(34, 32, 32);
+  transform: scale(1.03);
+}
+.mpsinfo {
+  width: 800px;
+  height: 600px;
+  background: linear-gradient(45deg, #eff6e0, #aec3b0);
+  border: 4px ridge black;
+  border-radius: 20px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  visibility:hidden;
+}
+.jecrcinfo {
+  width: 800px;
+  height: 600px;
+  background: linear-gradient(45deg, #eff6e0, #aec3b0);
+  border: 4px ridge black;
+  border-radius: 20px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  visibility:hidden;
+}
+i{
+    position: absolute;
+    top:30px;
+    right: 30px;
+    transform: scale(2.5);
+    cursor: pointer;
+}

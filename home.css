@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: #01161e;
+  height: 70px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  font-size: 1.7rem;
+}
+.menu {
+  width: 900px;
+  margin-right: 20px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.hero {
+  height: 400px;
+  background-color: #406675;
+  display: flex;
+  justify-content: space-evenly;
+}
+.des{
+    width:600px;
+    font-size: 1.5rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.img{
+    height: 400px;
+    width: 600px;
+    background-image: url("Me.jpg");
+    background-size: cover;
+}
+.am{
+    margin-top: 60px;
+    margin-bottom: 15px;
+    color: #AEC3B0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.name{
+    margin-bottom: 20px;
+    color: #EFF6E0;
+}
+.driving{
+    color: #AEC3B0;
+    font-family: "Truculenta", sans-serif;
+}
+.work{
+    height: 233px;
+    padding: 10px;
+    font-size: 2rem;
+    background-color: #92adb8;
+    
+}
+.with{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(99, 101, 104);
+    font-size: 140px;
+    margin-top: 10px;
+}

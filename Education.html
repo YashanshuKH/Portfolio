@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education</title>
+    <link rel="stylesheet" href="Education.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav>
+      <h1>Portfolio</h1>
+      <div class="menu">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Education.html">Education</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="box">
+      <div class="mps hid">
+        <img src="Mps.png" alt="Mps Logo">
+        <h1 class="edu">Maheshwari Public School</h1>
+      </div>
+      <div class="mps hid1">
+        <img src="Jecrc.png" alt="Jecrc Logo">
+        <h1 class="edu">Jecrc University</h1>
+      </div>
+    </div>
+    <div class="mpsinfo">
+        <i class="fa-solid fa-xmark cross" ></i>
+        MPS
+        </div>
+    <div class="jecrcinfo">
+        <i class="fa-solid fa-xmark cross1"></i>
+        JECRC
+    </div>
+
+    <script>
+  const hid = document.querySelector(".hid");
+  const hid1 = document.querySelector(".hid1");
+  const cross = document.querySelector(".cross");
+  const cross1 = document.querySelector(".cross1");
+  const bg = document.querySelector(".box");
+
+  const mpsinfo = document.querySelector(".mpsinfo");
+  const jecrcinfo = document.querySelector(".jecrcinfo");
+
+  // Helper to show one info and hide buttons
+  function showInfo(infoElement) {
+    infoElement.style.visibility = "visible";
+    hid.style.visibility = "hidden";
+    hid1.style.visibility = "hidden";
+  }
+
+  // Helper to hide all info and show buttons
+  function hideAllInfo() {
+    mpsinfo.style.visibility = "hidden";
+    jecrcinfo.style.visibility = "hidden";
+    hid.style.visibility = "visible";
+    hid1.style.visibility = "visible";
+    bg.style.boxShadow = "none"; // Reset the shadow if needed
+  }
+
+  // Events
+  hid.addEventListener("click", () => {
+    showInfo(mpsinfo);
+    bg.style.boxShadow = "inset 0px 0px 200px black";
+  });
+
+  hid1.addEventListener("click", () => {
+    showInfo(jecrcinfo);
+    bg.style.boxShadow = "inset 0px 0px 200px black";
+
+  });
+
+  cross.addEventListener("click", hideAllInfo);
+  cross1.addEventListener("click", hideAllInfo);
+</script>
+
+  </body>
+</html>
