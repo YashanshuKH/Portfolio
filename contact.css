@@ -27,10 +27,19 @@ a {
   color: white;
   text-decoration: none;
 }
+a:hover{
+  text-decoration: underline;
+  color: blue;
+}
 .box {
   height: 90vh;
   background-color: #aec3b0;
   display: flex;
   justify-content: space-evenly;
   overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+}
+p{
+  font-size: 35px;
 }
